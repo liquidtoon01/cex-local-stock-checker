@@ -1,4 +1,3 @@
-[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 [CmdletBinding()]
 Param (
     [Parameter(Mandatory=$true)]
@@ -12,7 +11,7 @@ Param (
     [string]$PushoverToken,
     [string]$PushoverUser
 )
-
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 #Items to check
 [array] $items = Get-Content -Path $ItemsToCheckFilePath
 #Stores to check
