@@ -14,14 +14,14 @@ It is advised to use this script on a schedule to be automatically alerted when 
 
 The Powershell script has six parameters;
 
-|  Parameter | Mandatory  |  Example | Notes  |   |
-|---|---|---|---|---|
-|  ItemsToCheckFilePath |  Y |  ./items-to-check.txt |   |   |
-|  Latitude | Y  | 54.974758  | https://www.latlong.net/  |   |
-|  Longitude | Y  | -1.620000  | https://www.latlong.net/  |   |
-|  StoresToCheckFilePath | Y  |  ./stores-to-check.txt |   |   |
-|  PushoverToken | N  | aab2nv99jg36mgtrgju29gdmji768o3  |   |   |
-|  PushoverUser |  N |  uzdp9r5qsg5uwla1ua5gviyy17j2so |   |   |
+|  Parameter | Mandatory  |  Example | Notes  |   
+|---|---|---|---|
+|  ItemsToCheckFilePath |  Y |  ./items-to-check.txt |   |   
+|  Latitude | Y  | 54.974758  | https://www.latlong.net/  |   
+|  Longitude | Y  | -1.620000  | https://www.latlong.net/  |   
+|  StoresToCheckFilePath | Y  |  ./stores-to-check.txt |   |   
+|  PushoverToken | N  | aab2nv99jg36mgtrgju29gdmji768o3  | https://pushover.net  |   
+|  PushoverUser |  N |  uzdp9r5qsg5uwla1ua5gviyy17j2so |  https://pushover.net |   
 
 
 
