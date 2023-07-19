@@ -1,3 +1,4 @@
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 [CmdletBinding()]
 Param (
     [Parameter(Mandatory=$true)]
