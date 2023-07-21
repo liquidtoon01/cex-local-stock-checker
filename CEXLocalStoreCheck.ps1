@@ -27,7 +27,9 @@ $wantedinstock = Get-Content -Path $wantedinstockpath
 function Send-PushoverNotification {
     Param(
       [Parameter(Mandatory=$true)]
-      [string]$message
+      [string]$message,
+      [Parameter(Mandatory=$true)]
+      [string]$item
     )
     if($PushoverToken.Length -gt 1){
         $uri = "https://api.pushover.net/1/messages.json"
@@ -35,6 +37,7 @@ function Send-PushoverNotification {
             token = $PushoverToken
             user = $PushoverUser
             message = $message
+            url = "https://uk.webuy.com/product-detail/?id=$item"
         }
         Write-Host "Sending Pushover Notification: $message"
         $parameters | Invoke-RestMethod -Uri $uri -Method Post
@@ -56,7 +59,7 @@ foreach ($item in $items){
             if ($wantedinstock -notcontains $check) {
                 Write-Host "Updating stock file with '$check'"
                 Add-Content -Path $wantedinstockpath -Value $check
-                Send-PushoverNotification -message "$boxname is now in stock at $store." #send pushover
+                Send-PushoverNotification -message "$boxname is now in stock at $store." -item $item #send pushover
             }
             else{
                 Write-Host "No stock change for $check."
@@ -68,7 +71,7 @@ foreach ($item in $items){
                 Write-Host "Updating stock file REMOVING '$check'"
                 Set-Content -Path $wantedinstockpath -Value (get-content -Path $wantedinstockpath | Select-String -Pattern $check -NotMatch)
                 
-                Send-PushoverNotification -message "$boxname is no longer in stock at $store."
+                Send-PushoverNotification -message "$boxname is no longer in stock at $store." -item $item
                 
             }
             
