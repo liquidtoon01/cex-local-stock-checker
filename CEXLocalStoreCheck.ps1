@@ -9,7 +9,8 @@ Param (
     [Parameter(Mandatory=$true)]
     [string]$StoresToCheckFilePath,
     [string]$PushoverToken,
-    [string]$PushoverUser
+    [string]$PushoverUser,
+    [string[]]$SendSummaryNotificationOn
 )
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 #Items to check
@@ -28,7 +29,6 @@ function Send-PushoverNotification {
     Param(
       [Parameter(Mandatory=$true)]
       [string]$message,
-      [Parameter(Mandatory=$true)]
       [string]$item
     )
     if($PushoverToken.Length -gt 1){
@@ -101,3 +101,27 @@ Write-Host "----------------------In Stock Summary---------------------" -Foregr
         else {
         }
     } 
+    # * optional send on specific days summary
+    $NotificationSentCheck = "summary-sent-today.txt"
+    $NotificationSent = Get-Content -Path $NotificationSentCheck -ErrorAction SilentlyContinue
+    if($SendSummaryNotificationOn.Length -gt 1){
+
+        if(Test-Path $NotificationSentCheck){}
+        else {New-Item -Name $NotificationSentCheck}    
+
+        if((get-date).DayOfWeek -in $SendSummaryNotificationOn -and !$NotificationSent){
+            $summarynotification = "----- In Stock Summary -----`r`n"
+            for ($i = 1; $i -lt $summary.Count; $i++) {
+                if ($summary[$i].Contains("currently")) {
+                    $summarynotification = $summarynotification +  $summary[$i] + "`r`n------------------------------`r`n"
+                    Add-Content -Path $NotificationSentCheck -Value "1"
+                }
+                else {  
+                }
+            }
+            Send-PushoverNotification -message $summarynotification
+        }
+        else{
+            Clear-Content $NotificationSentCheck 
+        }
+    }
