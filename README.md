@@ -8,11 +8,11 @@ And to get a summary of what is in stock and where locally
 
 ![summary of what is currently in stock](image-2.png)
 
-This script uses three .txt files as a "database" for reviewing what items you want reviewed, what stores to check and when to notify as stock is available or removed.
+This script uses three .txt files as a "database" for reviewing what items you want reviewed, what stores to check and when to notify as stock is available or removed. There is an optional fourth file to sending summary notifications of all your wanted items that are in stock.
 
 It is advised to use this script on a schedule to be automatically alerted when stock is changed for your chosen item. Windows Task Scheduler is a perfect example of this. An WTS XML file has been provided as an example in this repo.
 
-The Powershell script has six parameters;
+The Powershell script has seven parameters;
 
 |  Parameter | Mandatory  |  Example | Notes  |   
 |---|---|---|---|
@@ -22,6 +22,7 @@ The Powershell script has six parameters;
 |  StoresToCheckFilePath | Y  |  ./stores-to-check.txt |   |   
 |  PushoverToken | N  | aab2nv99jg36mgtrgju29gdmji768o3  | https://pushover.net  |   
 |  PushoverUser |  N |  uzdp9r5qsg5uwla1ua5gviyy17j2so |  https://pushover.net |   
+|  SendSummaryNotificationOn |  N |  Tuesday, Friday | |   
 
 
 
@@ -45,9 +46,12 @@ An example file has been provided in this repo.
 ## PushoverToken & PushoverUser
 If you want to be alerted when stock is changed, this script uses Pushover. Set this up and input your token and user IDs. The script will only notify on changes in stock and not every time the script is run.
 
+# SendSummaryNotificationOn
+You can send a summary of everything that is in stock for the items you're following if you so choose, input the days you want the notification to send. there will be an additional txt file created to check if the notification has already been sent and erase it on non wanted days.
+
 # Example run
 Example run in Powershell
 
 ```pwsh
-. '.\CEXLocalStoreCheck.ps1' -ItemsToCheckFilePath .\items-to-check.txt -Latitude "54.974758" -Longitude "-1.620000" -StoresToCheckFilePath .\stores-to-check.txt -PushoverToken "aab2nv99jguojhgfhj29gdmjiyx5o3" -PushoverUser "uzdp3zaqsg5uxfpoiuytviyyq4j2so"
+. '.\CEXLocalStoreCheck.ps1' -ItemsToCheckFilePath .\items-to-check.txt -Latitude "54.974758" -Longitude "-1.620000" -StoresToCheckFilePath .\stores-to-check.txt -PushoverToken "aab2nv99jguojhgfhj29gdmjiyx5o3" -PushoverUser "uzdp3zaqsg5uxfpoiuytviyyq4j2so" -SendSummaryNotificationOn Tuesday, Friday 
 ```
