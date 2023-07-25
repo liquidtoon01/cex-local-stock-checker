@@ -10,7 +10,7 @@ Param (
     [string]$StoresToCheckFilePath,
     [string]$PushoverToken,
     [string]$PushoverUser,
-    [string[]]$SendSummaryNotificationOn
+    [string[]]$SendSummaryNotificationOn=@()
 )
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 #Items to check
@@ -104,6 +104,7 @@ Write-Host "----------------------In Stock Summary---------------------" -Foregr
     # * optional send on specific days summary
     $NotificationSentCheck = "summary-sent-today.txt"
     $NotificationSent = Get-Content -Path $NotificationSentCheck -ErrorAction SilentlyContinue
+
     if($SendSummaryNotificationOn.Length -gt 1){
 
         if(Test-Path $NotificationSentCheck){}
