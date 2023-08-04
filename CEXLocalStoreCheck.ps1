@@ -1,15 +1,15 @@
 [CmdletBinding()]
 Param (
-    #[Parameter(Mandatory=$true)]
-    [string]$ItemsToCheckFilePath = ".\items-to-check.txt",
-    #[Parameter(Mandatory=$true)]
-    [string]$Latitude = "54.953800",
-    #[Parameter(Mandatory=$true)]
-    [string]$Longitude = "-1.455030", #https://www.latlong.net/
-    #[Parameter(Mandatory=$true)]
-    [string]$StoresToCheckFilePath = "stores-to-check.txt",
-    [string]$PushoverToken = "aab2nv99jg36mgjthj29gdmjiyx5o3",
-    [string]$PushoverUser = "uzdp3zaqsg5uxfz1ua5gviyyq4j2so",
+    [Parameter(Mandatory=$true)]
+    [string]$ItemsToCheckFilePath
+    [Parameter(Mandatory=$true)]
+    [string]$Latitude,
+    [Parameter(Mandatory=$true)]
+    [string]$Longitude, #https://www.latlong.net/
+    [Parameter(Mandatory=$true)]
+    [string]$StoresToCheckFilePath,
+    [string]$PushoverToken,
+    [string]$PushoverUser,
     [string[]]$SendSummaryNotificationOn=@()
 )
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
