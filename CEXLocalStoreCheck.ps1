@@ -1,7 +1,7 @@
 [CmdletBinding()]
 Param (
     [Parameter(Mandatory=$true)]
-    [string]$ItemsToCheckFilePath
+    [string]$ItemsToCheckFilePath,
     [Parameter(Mandatory=$true)]
     [string]$Latitude,
     [Parameter(Mandatory=$true)]
