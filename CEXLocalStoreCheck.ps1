@@ -1,20 +1,25 @@
 [CmdletBinding()]
 Param (
-    [Parameter(Mandatory=$true)]
-    [string]$ItemsToCheckFilePath,
-    [Parameter(Mandatory=$true)]
-    [string]$Latitude,
-    [Parameter(Mandatory=$true)]
-    [string]$Longitude, #https://www.latlong.net/
-    [Parameter(Mandatory=$true)]
-    [string]$StoresToCheckFilePath,
-    [string]$PushoverToken,
-    [string]$PushoverUser,
+    #[Parameter(Mandatory=$true)]
+    [string]$ItemsToCheckFilePath = ".\items-to-check.txt",
+    #[Parameter(Mandatory=$true)]
+    [string]$Latitude = "54.953800",
+    #[Parameter(Mandatory=$true)]
+    [string]$Longitude = "-1.455030", #https://www.latlong.net/
+    #[Parameter(Mandatory=$true)]
+    [string]$StoresToCheckFilePath = "stores-to-check.txt",
+    [string]$PushoverToken = "aab2nv99jg36mgjthj29gdmjiyx5o3",
+    [string]$PushoverUser = "uzdp3zaqsg5uxfz1ua5gviyyq4j2so",
     [string[]]$SendSummaryNotificationOn=@()
 )
 [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 #Items to check
 [array] $items = Get-Content -Path $ItemsToCheckFilePath
+$ErrorActionPreference = 'SilentlyContinue'
+foreach ($i in $items) { ($items[$items.IndexOf($i)] = $i.SubString(0, $i.IndexOf('#'))).trim() } 
+foreach ($i in $items) { ($items[$items.IndexOf($i)] = $i.SubString(0, $i.IndexOf(' '))).trim() }
+Clear-Host 
+$ErrorActionPreference = 'Break'
 #Stores to check
 [array] $stores = Get-Content -Path $StoresToCheckFilePath
 
@@ -105,7 +110,7 @@ Write-Host "----------------------In Stock Summary---------------------" -Foregr
     $NotificationSentCheck = "summary-sent-today.txt"
     $NotificationSent = Get-Content -Path $NotificationSentCheck -ErrorAction SilentlyContinue
 
-    if($SendSummaryNotificationOn.Length -gt 1){
+    if($SendSummaryNotificationOn.Length -gt 0){
 
         if(Test-Path $NotificationSentCheck){}
         else {New-Item -Name $NotificationSentCheck}    
