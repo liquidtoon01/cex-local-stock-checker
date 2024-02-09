@@ -1,0 +1,236 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cexlocalstorecheck
+data:
+  cexlocalstorecheck.ps1: |-
+      [CmdletBinding()]
+      Param (
+          [Parameter(Mandatory=$true)]
+          [string]$ItemsToCheckFilePath,
+          [Parameter(Mandatory=$true)]
+          [string]$Latitude,
+          [Parameter(Mandatory=$true)]
+          [string]$Longitude, #https://www.latlong.net/
+          [Parameter(Mandatory=$true)]
+          [string]$StoresToCheckFilePath,
+          [string]$PushoverToken,
+          [string]$PushoverUser,
+          [string[]]$SendSummaryNotificationOn=@()
+      )
+      [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
+      #Items to check
+      [array] $items = Get-Content -Path $ItemsToCheckFilePath
+      $ErrorActionPreference = 'SilentlyContinue'
+      foreach ($i in $items) { ($items[$items.IndexOf($i)] = $i.SubString(0, $i.IndexOf('#'))).trim() } 
+      foreach ($i in $items) { ($items[$items.IndexOf($i)] = $i.SubString(0, $i.IndexOf(' '))).trim() }
+      Clear-Host 
+      $ErrorActionPreference = 'Break'
+      #Stores to check
+      [array] $stores = Get-Content -Path $StoresToCheckFilePath
+
+      $wantedinstockpath = "/cex/wanted-games-stock.txt"
+      if(Test-Path $wantedinstockpath){}
+      else {New-Item -Name $wantedinstockpath }
+      $wantedinstock = Get-Content -Path $wantedinstockpath
+      [array] $summary = ""
+
+
+      function Send-PushoverNotification {
+          Param(
+            [Parameter(Mandatory=$true)]
+            [string]$message,
+            [string]$item
+          )
+          if($PushoverToken.Length -gt 1){
+              $uri = "https://api.pushover.net/1/messages.json"
+              $parameters = @{
+                  token = $PushoverToken
+                  user = $PushoverUser
+                  message = $message
+                  url = "https://uk.webuy.com/product-detail/?id=$item"
+              }
+              Write-Host "Sending Pushover Notification: $message"
+              $parameters | Invoke-RestMethod -Uri $uri -Method Post
+          }
+      }
+
+      foreach ($item in $items){
+          $neareststores = ConvertFrom-Json (Invoke-WebRequest "https://wss2.cex.uk.webuy.io/v3/boxes/$item/neareststores?latitude=$latitude&longitude=$longitude")
+          $detail = ConvertFrom-Json (Invoke-WebRequest https://wss2.cex.uk.webuy.io/v3/boxes/$item/detail)
+          $boxname = $detail.response.data.boxDetails.boxName
+
+          foreach ($store in $stores){
+              Write-Host "----------------------------------------------------------"
+              Write-Host "Checking store $store for $boxname"
+              $check = "$item, $store"
+              if ($neareststores.response.data.nearestStores.storeName -eq $store){
+                  $WriteOutput ="$boxname is currently in stock locally at $store."
+                  
+                  if ($wantedinstock -notcontains $check) {
+                      Write-Host "Updating stock file with '$check'"
+                      Add-Content -Path $wantedinstockpath -Value $check
+                      Send-PushoverNotification -message "$boxname is now in stock at $store." -item $item #send pushover
+                  }
+                  else{
+                      Write-Host "No stock change for $check."
+                  }
+              }
+              elseif ($neareststores.response.data.nearestStores.storeName -ne $store) {
+                  $writeoutput = "$boxname is not in stock at $store."
+                  if ($wantedinstock -contains $check){
+                      Write-Host "Updating stock file REMOVING '$check'"
+                      Set-Content -Path $wantedinstockpath -Value (get-content -Path $wantedinstockpath | Select-String -Pattern $check -NotMatch)
+                      
+                      Send-PushoverNotification -message "$boxname is no longer in stock at $store." -item $item
+                      
+                  }
+                  
+              }
+              else {
+                  Write-Host $store "error"
+              }
+              $summary += $writeoutput
+          }
+            
+          
+      }
+      Write-Host "------------------------Full Summary-----------------------" -ForegroundColor Yellow
+          for ($i = 1; $i -lt $summary.Count; $i++) {
+              if ($summary[$i].Contains("currently")) {
+                  Write-Host $summary[$i] -ForegroundColor Green
+              }
+              else {
+                  Write-Host $summary[$i] -ForegroundColor Red
+              }
+          } 
+      Write-Host "----------------------In Stock Summary---------------------" -ForegroundColor Yellow
+          for ($i = 1; $i -lt $summary.Count; $i++) {
+              if ($summary[$i].Contains("currently")) {
+                  Write-Host $summary[$i] -ForegroundColor Green
+              }
+              else {
+              }
+          } 
+          # * optional send on specific days summary
+          $NotificationSentCheck = "summary-sent-today.txt"
+          $NotificationSent = Get-Content -Path $NotificationSentCheck -ErrorAction SilentlyContinue
+
+          if($SendSummaryNotificationOn.Length -gt 0){
+
+              if(Test-Path $NotificationSentCheck){}
+              else {New-Item -Name $NotificationSentCheck}    
+
+              if((get-date).DayOfWeek -in $SendSummaryNotificationOn -and !$NotificationSent){
+                  $summarynotification = "----- In Stock Summary -----`r`n"
+                  for ($i = 1; $i -lt $summary.Count; $i++) {
+                      if ($summary[$i].Contains("currently")) {
+                          $summarynotification = $summarynotification +  $summary[$i] + "`r`n------------------------------`r`n"
+                          Add-Content -Path $NotificationSentCheck -Value "1"
+                      }
+                      else {  
+                      }
+                  }
+                  Send-PushoverNotification -message $summarynotification
+              }
+              else{
+                  Clear-Content $NotificationSentCheck 
+              }
+          }
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cexitemstocheck
+data:
+  cexitemstocheck.txt: |-
+      837171600148ab #turtles hyperstone w/ man
+      5055060920299 #ResidentEvilSurvivor2
+      4974365615550ab #Ristar w/ man
+      3455198003826ab #SeparationAnxiety w/ man
+      5023843024816ab #Spider-Man/X-Men w/ man
+      ssegmd013ab #Spider-Man1995 w/ man
+      4012927055113 #MGR-CE
+      4974365615390ab #StreetsofRage3 w/ man
+      sps3swhi3201c #WhitePS3
+      sps1g1381ab #Final Fantasy VII Plat w/ man
+      sps1g349ab #Resident Evil Directors Cut w/ man
+      5023843008915ab #Empire of Steel w/ man
+      sps1g090ab #Alien Trilogy w/ man
+      5055060929704 #DuckTalesRemastered
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cexstorestocheck
+data:
+  cexstorestocheck.txt: |-
+      Cramlington
+      North Shields
+      South Shields
+      Washington
+      Sunderland
+      Newcastle Upon Tyne
+      Newcastle Grainger St
+      Gateshead Trinity Square
+      Gateshead Metro Centre
+      Durham
+      Arnison Durham
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: cex-local-stock-checker
+spec:
+  schedule: "0 */3 * * *"
+  startingDeadlineSeconds: 24001
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 5
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            k8s-app: cex-local-stock-checker
+        spec:
+          containers:
+          - name: powershell
+            image: mcr.microsoft.com/powershell
+            imagePullPolicy: "Always"
+            command:
+            - /bin/sh
+            - -c
+            - "pwsh -ExecutionPolicy Unrestricted -NonInteractive -Command '/config/cexlocalstorecheck.ps1' -ItemsToCheckFilePath '/config/cexitemstocheck.txt' -Latitude '54.953800' -Longitude '-1.455030' -StoresToCheckFilePath '/config/cexstorestocheck.txt' -PushoverToken 'ar7tq7fnrka1i1shvji2ej6qi2btoz' -PushoverUser 'uzdp3zaqsg5uxfz1ua5gviyyq4j2so' -SendSummaryNotificationOn 'Thursday,Saturday'"
+            volumeMounts:
+              - mountPath: "/cex"
+                name: cex
+              - name: cexlocalstorecheck
+                mountPath: /config/cexlocalstorecheck.ps1
+                subPath: cexlocalstorecheck.ps1
+              - name: cexitemstocheck
+                mountPath: /config/cexitemstocheck.txt
+                subPath: cexitemstocheck.txt
+              - name: cexstorestocheck
+                mountPath: /config/cexstorestocheck.txt
+                subPath: cexstorestocheck.txt
+          volumes:
+            - name: cex
+              hostPath:
+                # directory location on host
+                path: /home/administrator/cex
+                # this field is optional
+                type: DirectoryOrCreate
+            - name: cexlocalstorecheck
+              configMap:
+                name: cexlocalstorecheck
+                defaultMode: 0777
+            - name: cexitemstocheck
+              configMap:
+                name: cexitemstocheck
+                defaultMode: 0777
+            - name: cexstorestocheck
+              configMap:
+                name: cexstorestocheck
+                defaultMode: 0777
+          restartPolicy: OnFailure
