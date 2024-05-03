@@ -151,18 +151,15 @@ data:
       ssegmd013ab #Spider-Man1995 w/ man
       4012927055113 #MGR-CE
       4974365615390ab #StreetsofRage3 w/
-      sps1g1381ab #Final Fantasy VII Plat w/ man
       sps1g349ab #Resident Evil Directors Cut w/ man
-      5055060929704 #DuckTalesRemastered
-      711719761952 #Siren blood curse
       5020717500032ab #Skeleton Krew
-      5028587020124ab #Earthworm Jim 2
       4974365610272ab #Decap Attack
       5030935111248 #Mass Effect Trilogy
       711719190950 #GT5 CE
       3391891965149 #TekkenTagTourn CE
       5026555408097 #Max Payne CE
       4974365610425B #Ecco (for boxes)
+      sps1g627ab #Tomb Raider w/ man
 
 ---
 apiVersion: v1
