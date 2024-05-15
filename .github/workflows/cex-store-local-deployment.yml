@@ -34,7 +34,7 @@ jobs:
           tags: tag:ci
 
       # Runs a set of commands using the runners shell
-      - uses: actions-hub/kubectl@master
+      - uses: actions-hub/kubectl@1.23.17
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
