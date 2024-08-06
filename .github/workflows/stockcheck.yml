@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: StockCheck
+
+# Controls when the workflow will run
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 * * * *"   # <=== Change this value
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+permissions:
+  contents: write
+  
+jobs:
+  # This workflow contains a single job called "build"
+  Check:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+      - name: Check Stores
+        shell: pwsh
+        run: |
+          . '.\CEXLocalStoreCheck.ps1' -ItemsToCheckFilePath .\items-to-check.txt -Latitude ${{ secrets.LATITUDE }} -Longitude ${{ secrets.LONGITUDE }} -StoresToCheckFilePath .\stores-to-check.txt -PushoverToken ${{ secrets.PUSHOVER_TOKEN }} -PushoverUser ${{ secrets.PUSHOVER_USER }} 
+      - name: Commit stock change
+        run: |
+          git config --global user.name 'liquidtoon01'
+          git config --global user.email 'liquidtoon01@users.noreply.github.com'
+          git commit -am "Automated update"
+          git push
