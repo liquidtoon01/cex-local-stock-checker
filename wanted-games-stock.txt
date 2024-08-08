@@ -59,7 +59,6 @@ sps1g627ab, Gateshead Trinity Square
 5030930102081, Newcastle Grainger St
 5030930102081, Gateshead Trinity Square
 3391891976442, Sunderland
-3391891976442, Newcastle Upon Tyne
 5055277010356, Washington
 5055277010356, Sunderland
 5055277010356, Gateshead Trinity Square
