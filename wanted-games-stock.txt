@@ -57,21 +57,17 @@ sps1g627ab, Gateshead Trinity Square
 3700577002717, Gateshead Trinity Square
 5030930102081, Sunderland
 5030930102081, Newcastle Grainger St
-5030930102081, Gateshead Trinity Square
 3391891976442, Sunderland
 5055277010356, Washington
 5055277010356, Sunderland
 5055277010356, Gateshead Trinity Square
-5030930052843, Gateshead Trinity Square
 5026555366298, South Shields
 5026555366298, Arnison Durham
 4020628675561, Gateshead Metro Centre
 5030947124687, North Shields
 5030947124687, South Shields
 5030947124687, Sunderland
-5030947124687, Gateshead Trinity Square
 5030947124687, Durham
 5030947124687, Arnison Durham
-5060112433474, Gateshead Trinity Square
 5060112433474, Sunderland
 sps1g349ab, Cramlington
