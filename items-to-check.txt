@@ -11,7 +11,6 @@ sps1g349ab #Resident Evil Directors Cut w/ man
 5030917037368 #THP8
 5060004768929 #WSC07
 3307210233042 #BlazingAngels
-5030930052843 #NFSCarbon
 3307210251503 #EnchantedArms
 5030930052935 #NBAStreetHomecourt
 5026555400077 #NHL2k7
@@ -19,11 +18,7 @@ sps1g349ab #Resident Evil Directors Cut w/ man
 5060138431201 #VF5
 5055060966976 #Okami
 889842528565 #OriWill
-5030930102081 #Portal2
-3391891976442 #JoJo
 ssegsatconm2002 #Saturn
 5056635607058 #SeaofStars
 5026555366298 #MarvelMidnightSuns
 4020628675561 #KingofFighters
-5030947124687 #DeadSpace
-5060112433474 #TerminatorResistance
