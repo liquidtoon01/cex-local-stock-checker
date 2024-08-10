@@ -72,3 +72,4 @@ sps1g627ab, Gateshead Trinity Square
 5060112433474, Sunderland
 sps1g349ab, Cramlington
 3307210251503, Newcastle Upon Tyne
+5055060925904, Newcastle Upon Tyne
