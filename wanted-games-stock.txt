@@ -71,5 +71,4 @@ sps1g627ab, Gateshead Trinity Square
 5030947124687, Arnison Durham
 5060112433474, Sunderland
 sps1g349ab, Cramlington
-5055060925904, Newcastle Upon Tyne
 5030930059781, Sunderland
