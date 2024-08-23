@@ -6,3 +6,5 @@ sps1g349ab, Cramlington
 5060004768929, Newcastle Grainger St
 5060138431201, Sunderland
 5056635607058, Durham
+5060004768929, Newcastle Upon Tyne
+5030930054151, Newcastle Upon Tyne
