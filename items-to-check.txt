@@ -8,7 +8,6 @@ sps1g349ab #Resident Evil Directors Cut w/ man
 5030930102975 #ShadowsoftheDamned
 5030930059781 #Godfather
 5030917037368 #THP8
-5060004768929 #WSC07
 3307210233042 #BlazingAngels
 3307210251503 #EnchantedArms
 5030930052935 #NBAStreetHomecourt
@@ -19,7 +18,6 @@ ssegsatconm2002 #Saturn
 5056635607058 #SeaofStars
 711719167792 #Start The Party! Save The World (Move)
 3307216017332 #Just Dance 2018
-3307215967263 #Just Dance 2017
 3307215734148 #Just Dance 2014
 3307215656310 #Just Dance 4 (Move)
 711719206354 #DanceStar Party Hits
