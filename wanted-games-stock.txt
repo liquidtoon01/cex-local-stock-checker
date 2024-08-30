@@ -9,3 +9,6 @@ sps1g349ab, Cramlington
 5030930052690, Sunderland
 5030930052690, Gateshead Metro Centre
 5030930052690, Durham
+5030930102975, York
+5030930054151, York
+5030930052690, York
