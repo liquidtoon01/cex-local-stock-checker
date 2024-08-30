@@ -6,3 +6,6 @@ sps1g349ab, Cramlington
 5060004768929, Newcastle Upon Tyne
 711719167792, Sunderland
 711719247319, Gateshead Trinity Square
+5030930052690, Sunderland
+5030930052690, Gateshead Metro Centre
+5030930052690, Durham
