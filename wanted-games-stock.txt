@@ -22,3 +22,5 @@ sps1g349ab, Cramlington
 5051892132329, Newcastle Grainger St
 5051892132329, Gateshead Metro Centre
 5051892132329, Arnison Durham
+711719206354, Arnison Durham
+5051892189750, Newcastle Grainger St
