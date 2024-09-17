@@ -11,7 +11,6 @@
 5030930052690, York
 711719167792, Gateshead Metro Centre
 sps1g349ab, Cramlington
-5055060927427, Sunderland
 5051892189750, Cramlington
 5051892189750, South Shields
 5051892189750, Washington
