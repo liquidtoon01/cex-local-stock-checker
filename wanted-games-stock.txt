@@ -22,3 +22,4 @@ sps1g349ab, Cramlington
 5051892189750, Newcastle Grainger St
 5026555400077, Cramlington
 5030930054151, Cramlington
+5051892189750, Gateshead Trinity Square
