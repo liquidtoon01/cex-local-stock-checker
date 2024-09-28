@@ -21,5 +21,4 @@ ssegsatconm2002 #Saturn
 711719131199 #After Hours Athletes (Move)
 5030930052690 #FightNightRound3
 5051892189750 #LegoMarvelAvengers
-5051892132329 #LegoMarvelSuperheroes
 4005209154987 #MarvelSuperHeroSquad
