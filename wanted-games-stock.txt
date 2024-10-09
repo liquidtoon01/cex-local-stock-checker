@@ -8,7 +8,6 @@
 5030930102975, York
 5030930052690, York
 5051892189750, Cramlington
-5051892189750, Gateshead Metro Centre
 5051892189750, Arnison Durham
 5051892132329, Cramlington
 5051892132329, South Shields
