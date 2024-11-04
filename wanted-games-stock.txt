@@ -23,3 +23,4 @@
 5051892189750, Sunderland
 5030930059781, South Shields
 5026555408097, Arnison Durham
+5026555408097, Gateshead Metro Centre
