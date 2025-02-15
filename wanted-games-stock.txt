@@ -36,7 +36,6 @@
 8717418401481, Gateshead Trinity Square
 8717418304430, Cramlington
 8717418304430, Sunderland
-8717418353803, Newcastle Grainger St
 8717418353803, Gateshead Trinity Square
 8717418353803, Gateshead Metro Centre
 8717418353803, Arnison Durham
