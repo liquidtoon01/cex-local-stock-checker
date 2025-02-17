@@ -35,7 +35,6 @@
 8717418385996, Arnison Durham
 8717418401481, Gateshead Trinity Square
 8717418304430, Cramlington
-8717418304430, Sunderland
 8717418353803, Gateshead Trinity Square
 8717418353803, Gateshead Metro Centre
 8717418353803, Arnison Durham
