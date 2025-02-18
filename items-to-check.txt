@@ -15,7 +15,6 @@
 8717418304430 # bambi blu
 8717418418427 # dumbo sb
 8717418356149 # dumbo blu
-8717418353803 # fox hound blu
 8717418437626 # fox hound sb
 8717418418489 # oliver blu
 8717418421557 # robin hood sb
