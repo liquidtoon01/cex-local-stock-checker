@@ -24,10 +24,8 @@
 5030930052935, Cramlington
 5039036080521, Newcastle Grainger St
 5039036080521, Gateshead Metro Centre
-8717418392598, Newcastle Grainger St
 8717418423506, North Shields
 8717418423506, Gateshead Metro Centre
-8717418349608, Newcastle Grainger St
 8717418349608, Gateshead Trinity Square
 8717418349608, Durham
 8717418385996, Gateshead Metro Centre
@@ -37,10 +35,7 @@
 8717418304430, Cramlington
 8717418353803, Gateshead Metro Centre
 8717418353803, Arnison Durham
-8717418418489, Newcastle Grainger St
-8717418471309, Newcastle Grainger St
 8717418355708, Durham
-8717418366094, Newcastle Grainger St
 8717418366094, Gateshead Metro Centre
 8717418366094, Durham
 711719279976, Cramlington
