@@ -38,7 +38,6 @@
 8717418353803, Gateshead Metro Centre
 8717418353803, Arnison Durham
 8717418418489, Newcastle Grainger St
-8717418423513, Gateshead Metro Centre
 8717418471309, Newcastle Grainger St
 8717418355708, Durham
 8717418366094, Newcastle Grainger St
