@@ -1,12 +1,9 @@
 5039036080521 # Logan (15) 2017 - Limited Ed. Steelbook
 5039036073899 # DOFP steelbook
-5051892130066 #batman begins steelbook
 8717418435806 #hunchback sb
-8717418392598 # hb blu ray
 8717418494827 #lilo sb
 8717418423506 #lil blu
 8717418428457 #poca sb
-8717418349608 #poca bluray
 8717418433321 #mulan sb
 8717418385996 # mulan blu
 8717418401481 # sword blu
@@ -16,20 +13,17 @@
 8717418418427 # dumbo sb
 8717418356149 # dumbo blu
 8717418437626 # fox hound sb
-8717418418489 # oliver blu
 8717418421557 # robin hood sb
 8717418408572 # robin hood blu
 8717418423513 # emp blu
 8717418459635 # emp db nis
 8717418471439 # pooh blu
-8717418471309 # basil blu
 8717418534479 # basil sb
 8717418355708 # tarzan blu
 8717418440473 # tarzan sb
 8717418363093 # rdu blu
 8717418428464 # resc sb
 8717418534486 # rdu sb
-8717418366094 # resc blu
 4974365615550AB # ristar
 4974365610296AB # burning force nis
 SPS1G306AB # raiden project
