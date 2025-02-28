@@ -43,3 +43,4 @@
 8717418401481, South Shields
 711719279976, Newcastle Grainger St
 8023171044903, North Shields
+711719279976, Newcastle Upon Tyne
