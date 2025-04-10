@@ -5,8 +5,6 @@
 8717418433321 #mulan sb
 8717418385996 # mulan blu
 8717418459642 # sword sb
-8717418418427 # dumbo sb
-8717418356149 # dumbo blu
 8717418437626 # fox hound sb
 8717418421557 # robin hood sb
 8717418408572 # robin hood blu
@@ -17,13 +15,11 @@
 8717418355708 # tarzan blu
 8717418440473 # tarzan sb
 8717418363093 # rdu blu
-8717418428464 # resc sb
 8717418534486 # rdu sb
 4974365615550AB # ristar
 4974365610296AB # burning force nis
 SPS1G306AB # raiden project
 4012927105771 # mgs master ps4
-711719279976 # knack
 5055060922156 # onimusha 3
 5039036079631 # arrival sb
 5053083151348 # jurassic park sb
