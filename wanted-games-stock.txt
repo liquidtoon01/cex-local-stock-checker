@@ -7,7 +7,6 @@
 711719279976, Gateshead Trinity Square
 711719279976, Gateshead Metro Centre
 8023171044903, North Shields
-8023171044903, Arnison Durham
 5053083151348, Washington
 5056453203166, York
 8023171044903, Cramlington
