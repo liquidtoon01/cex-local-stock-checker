@@ -17,5 +17,4 @@ SPS1G306AB # raiden project
 5039036079631 # arrival sb
 5053083151348 # jurassic park sb
 5056453203166 # raiders sb
-8023171044903 # control ps4
 5050630604029 # sm across sb
