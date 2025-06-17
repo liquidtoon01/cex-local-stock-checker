@@ -47,8 +47,6 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 5055277023776 # alien isolation
 3307216111597 # assassins creed 3 remastered (heritage coll)
 3307216044475 # assassins creed rogue remastered
-3307215977361 # assassins creed ezio collection
-3307215715314 # assassins creed black flag (skull ed)
 5055277036349 # bayonetta
 5026555421898 # bioshock
 0711719877745 # beyond two souls
@@ -62,7 +60,6 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 5030917185939 # deadpool
 5055060948101 # devil may cry collection
 745114517609 # ghostbusters
-711719842835 # god of war 3
 3307216049333 # farcry 3
 5051892215558 # hitman 
 5026555423731 # la noire
