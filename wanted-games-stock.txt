@@ -45,7 +45,6 @@
 3307215715314, Sunderland
 3307215715314, Newcastle Grainger St
 3307215715314, Gateshead Trinity Square
-3307215715314, Gateshead Metro Centre
 3307215715314, Durham
 3307215715314, Arnison Durham
 5026555421898, North Shields
@@ -101,7 +100,6 @@
 711719842835, Newcastle Upon Tyne
 711719842835, Newcastle Grainger St
 711719842835, Gateshead Trinity Square
-711719842835, Gateshead Metro Centre
 711719842835, Arnison Durham
 3307216049333, Washington
 5051892215558, Sunderland
