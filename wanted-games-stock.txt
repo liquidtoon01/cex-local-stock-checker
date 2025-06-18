@@ -60,7 +60,6 @@
 5026555421058, Cramlington
 5026555421058, North Shields
 5026555421058, Washington
-5026555421058, Sunderland
 5026555421058, Gateshead Trinity Square
 5026555421058, Gateshead Metro Centre
 5026555421058, Arnison Durham
