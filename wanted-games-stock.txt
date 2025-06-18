@@ -133,3 +133,4 @@
 3391892004212, Newcastle Grainger St
 5030917141553, Gateshead Metro Centre
 5030917185939, North Shields
+3307216111597, South Shields
