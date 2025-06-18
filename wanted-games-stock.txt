@@ -80,7 +80,6 @@
 5030917214639, Arnison Durham
 9006113009429, Durham
 4020628844677, Sunderland
-4020628844677, Gateshead Metro Centre
 4020628844677, Arnison Durham
 5030917185939, Washington
 5030917185939, Sunderland
@@ -100,7 +99,6 @@
 711719842835, Newcastle Grainger St
 711719842835, Gateshead Trinity Square
 711719842835, Arnison Durham
-3307216049333, Washington
 5051892215558, Sunderland
 5026555423731, Cramlington
 5026555423731, North Shields
