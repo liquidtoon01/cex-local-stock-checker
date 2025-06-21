@@ -73,7 +73,6 @@
 5030917214639, Newcastle Upon Tyne
 5030917214639, Gateshead Trinity Square
 5030917214639, Gateshead Metro Centre
-5030917214639, Durham
 5030917214639, Arnison Durham
 9006113009429, Durham
 4020628844677, Sunderland
