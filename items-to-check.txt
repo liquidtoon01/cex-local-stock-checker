@@ -62,8 +62,6 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 745114517609 # ghostbusters
 3307216049333 # farcry 3
 5051892215558 # hitman 
-5026555423731 # la noire
-5051892189767 # lego avengers
 5051892145237 # lego marvel super heroes
 5035224123933 # mass effect
 4012927105771 # metal gear solid
