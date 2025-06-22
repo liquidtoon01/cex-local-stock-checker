@@ -102,7 +102,6 @@
 5026555423731, Gateshead Trinity Square
 5026555423731, Arnison Durham
 5051892189767, North Shields
-5051892189767, South Shields
 5051892189767, Washington
 5051892189767, Sunderland
 5051892189767, Newcastle Upon Tyne
