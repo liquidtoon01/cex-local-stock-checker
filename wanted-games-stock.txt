@@ -92,7 +92,6 @@
 711719842835, Newcastle Grainger St
 711719842835, Gateshead Trinity Square
 711719842835, Arnison Durham
-5051892215558, Sunderland
 5026555423731, Cramlington
 5026555423731, North Shields
 5026555423731, South Shields
