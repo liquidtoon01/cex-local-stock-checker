@@ -70,7 +70,6 @@
 5030917214639, Sunderland
 5030917214639, Newcastle Upon Tyne
 5030917214639, Gateshead Trinity Square
-5030917214639, Gateshead Metro Centre
 5030917214639, Arnison Durham
 9006113009429, Durham
 4020628844677, Sunderland
@@ -128,3 +127,4 @@
 3307216044475, Arnison Durham
 5030936122748, Cramlington
 5030917214639, Newcastle Grainger St
+0711719877745, Arnison Durham
