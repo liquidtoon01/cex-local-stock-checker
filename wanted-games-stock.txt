@@ -60,7 +60,6 @@
 5026555421058, Gateshead Metro Centre
 5026555421058, Arnison Durham
 5016488130288, Sunderland
-5030936122748, South Shields
 5030936122748, Washington
 5030936122748, Sunderland
 5030936122748, Newcastle Grainger St
