@@ -130,3 +130,4 @@
 5026555421058, Sunderland
 5030936122748, South Shields
 5030936122748, Gateshead Metro Centre
+5026555421058, Gateshead Trinity Square
