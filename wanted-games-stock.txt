@@ -46,7 +46,6 @@
 3307215715314, Gateshead Trinity Square
 3307215715314, Durham
 3307215715314, Arnison Durham
-5026555421898, Sunderland
 5026555421898, Gateshead Metro Centre
 5026555421898, Durham
 0711719877745, North Shields
