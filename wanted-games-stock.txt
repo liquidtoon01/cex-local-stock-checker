@@ -16,7 +16,6 @@
 8717418576288, Washington
 5030917141553, South Shields
 5055277023776, Cramlington
-5055277023776, North Shields
 5055277023776, South Shields
 5055277023776, Washington
 5055277023776, Sunderland
