@@ -60,7 +60,6 @@
 5016488130288, Sunderland
 5030936122748, Washington
 5030936122748, Sunderland
-5030936122748, Newcastle Grainger St
 5030936122748, Durham
 5030936122748, Arnison Durham
 5030917214639, North Shields
