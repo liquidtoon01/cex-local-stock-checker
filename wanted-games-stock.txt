@@ -26,7 +26,6 @@
 3307216111597, Washington
 3307216111597, Gateshead Metro Centre
 3307216044475, South Shields
-3307216044475, Washington
 3307216044475, Newcastle Grainger St
 3307216044475, Gateshead Metro Centre
 3307215977361, Cramlington
@@ -58,7 +57,6 @@
 5026555421058, Gateshead Metro Centre
 5026555421058, Arnison Durham
 5016488130288, Sunderland
-5030936122748, Washington
 5030936122748, Sunderland
 5030936122748, Durham
 5030936122748, Arnison Durham
@@ -77,7 +75,6 @@
 5030917185939, Gateshead Trinity Square
 5030917185939, Gateshead Metro Centre
 5030917185939, Arnison Durham
-745114517609, Washington
 745114517609, Sunderland
 711719842835, Cramlington
 711719842835, North Shields
@@ -116,7 +113,6 @@
 5030917141553, Gateshead Metro Centre
 3307216111597, South Shields
 5055277023776, Durham
-745114517609, South Shields
 5050630604029, Cramlington
 5030917141553, Durham
 3307216044475, Arnison Durham
