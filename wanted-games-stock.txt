@@ -123,3 +123,4 @@
 5026555421058, Sunderland
 9006113009429, Gateshead Metro Centre
 9006113008125, Gateshead Metro Centre
+3307216111597, Gateshead Trinity Square
