@@ -64,7 +64,6 @@
 5030917214639, Sunderland
 5030917214639, Gateshead Trinity Square
 5030917214639, Arnison Durham
-9006113009429, Durham
 4020628844677, Arnison Durham
 5030917185939, Washington
 5030917185939, Sunderland
