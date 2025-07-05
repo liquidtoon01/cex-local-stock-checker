@@ -47,11 +47,8 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 5055277036349 # bayonetta
 5026555421898 # bioshock
 0711719877745 # beyond two souls
-5030917214639 # cod mw
 9006113009429 # darksiders
 9006113008125 # darksiders 2
 4020628844677 # dead island
-3307216049333 # farcry 3
 5051892215558 # hitman 
 5035224123933 # mass effect
-3391892004212 # ni no kuni
