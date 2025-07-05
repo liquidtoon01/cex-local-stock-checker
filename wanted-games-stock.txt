@@ -23,7 +23,6 @@
 5055277023776, Newcastle Grainger St
 5055277023776, Arnison Durham
 3307216111597, Cramlington
-3307216111597, Washington
 3307216111597, Gateshead Metro Centre
 3307216044475, South Shields
 3307216044475, Newcastle Grainger St
@@ -122,3 +121,4 @@
 9006113008125, Gateshead Metro Centre
 3307216111597, Gateshead Trinity Square
 5026555421898, North Shields
+4020628844677, Washington
