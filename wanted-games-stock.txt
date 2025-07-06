@@ -122,3 +122,4 @@
 5026555421898, North Shields
 4020628844677, Washington
 0711719877745, Gateshead Trinity Square
+5026555421898, Newcastle Upon Tyne
