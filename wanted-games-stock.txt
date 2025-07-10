@@ -100,7 +100,6 @@
 5051892145237, Gateshead Trinity Square
 5051892145237, Durham
 5035224123933, Cramlington
-5035224123933, South Shields
 5035224123933, Sunderland
 5035224123933, Arnison Durham
 3391892004212, Newcastle Grainger St
