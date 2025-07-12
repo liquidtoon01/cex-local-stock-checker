@@ -126,3 +126,4 @@
 5055277036349, South Shields
 0711719877745, Newcastle Grainger St
 9006113009429, Cramlington
+0711719877745, Gateshead Metro Centre
