@@ -26,7 +26,6 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 8717418600235 # Mondo Avengers 3
 8717418600105 # Mondo Avengers 4
 5051891164529 # Mondo Friday 13th
-8717418506995 # Mondo Incredibles
 8717418542955 # Mondo Frozen
 5051891164536 # Mondo IT
 8717418543556 # Mondo Sleeping Beauty
