@@ -10,9 +10,7 @@
 4974365615550AB # ristar
 4974365610296AB # burning force nis
 SPS1G306AB # raiden project
-5055060922156 # onimusha 3
 5039036079631 # arrival sb
-5053083151348 # jurassic park sb
 5056453203166 # raiders sb
 5050630604029 # sm across sb
 SPS5SD1TB30G002 #ps5 30th unboxed
