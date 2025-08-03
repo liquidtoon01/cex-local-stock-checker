@@ -116,7 +116,6 @@
 0711719877745, Sunderland
 5051892215558, Sunderland
 0711719877745, Newcastle Grainger St
-0711719877745, Gateshead Metro Centre
 4020628844677, North Shields
 5026555421898, Newcastle Grainger St
 4020628844677, Cramlington
