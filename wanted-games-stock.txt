@@ -120,5 +120,4 @@
 5026555421898, Newcastle Grainger St
 4020628844677, Cramlington
 0711719877745, Cramlington
-9006113008125, Gateshead Metro Centre
 5030917141553, Sunderland
