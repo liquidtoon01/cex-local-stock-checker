@@ -11,7 +11,6 @@
 SPS1G306AB # raiden project
 5039036079631 # arrival sb
 5056453203166 # raiders sb
-5050630604029 # sm across sb
 SPS5SD1TB30G002 #ps5 30th unboxed
 8717418576264 # Mondo Dr Strange
 8717418600150 # Mondo AntMan
