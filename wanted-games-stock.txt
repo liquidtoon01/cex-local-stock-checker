@@ -122,3 +122,4 @@
 5030917141553, Sunderland
 5056453203166, Washington
 0711719877745, South Shields
+8717418542955, Gateshead Trinity Square
