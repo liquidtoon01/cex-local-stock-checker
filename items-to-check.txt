@@ -4,7 +4,6 @@
 8717418459642 # sword sb
 8717418437626 # fox hound sb
 8717418459635 # emp db nis
-8717418471439 # pooh blu
 8717418534479 # basil sb
 8717418534486 # rdu sb
 4974365610296AB # burning force nis
@@ -34,6 +33,5 @@ SPS5SD1TB30G002 #ps5 30th unboxed
 8717418600136 # Mondo Thor 2
 8717418612665 # Mondo Thor 3
 5053083207779 # Mondo Quiet Place
-8717418576288 # Mondo GotG
 8717418600143 # Mondo GotG 2
 8717418612689 # Mondo Cap Marvel
