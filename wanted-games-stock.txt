@@ -121,3 +121,15 @@
 0711719877745, Cramlington
 5030917141553, Sunderland
 0711719877745, South Shields
+8717418576264, Gateshead Metro Centre
+8717418576271, Gateshead Metro Centre
+8717418600167, Gateshead Metro Centre
+8717418600099, Gateshead Metro Centre
+5051891164529, Gateshead Metro Centre
+5051891164536, Gateshead Metro Centre
+8717418576257, Gateshead Metro Centre
+5051892244916, Gateshead Metro Centre
+8717418576233, Gateshead Metro Centre
+8717418576240, Gateshead Metro Centre
+5053083207779, Gateshead Metro Centre
+8717418600143, Gateshead Metro Centre
